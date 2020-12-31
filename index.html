@@ -14,14 +14,14 @@
 
     <style>
         .table>thead>tr>th {
-            padding: 60px;
+            padding: 0 60px;
         }
     </style>
 
 
 </head>
 
-<body onload="loadCatatan();">
+<body onload="loadPesanan();">
 
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" rel="home" href="index.html" title="Home">
-                    <img style="max-width: 150px;  margin-top: -7px;" src="assets/images/logo-header.png">
+                    <img src="assets/images/logo-header.png">
                 </a>
             </div>
 
@@ -84,9 +84,12 @@
 
     <div class="col-xs-12 col-md-8 col-md-offset-2" ng-controller="listContactCtrl">
         <div class="page-header">
-            <h1 align="center">
-                Daftar Pesanan
-            </h1>
+            <h2>Image profile</h2>
+            <h1>Halo 'Nama' Selamat Datang di</h1>
+            <img src="assets/images/logo-header.png">
+            <h2 align="center">
+                Silakan pilih menu dibawah ini!
+            </h2>
             <ul class="nav nav-pills">
                 <li><a id="nav-list-catatan" href="javascript:void(0);" onclick="gantiMenu('list-catatan');">List
                         Pesanan</a></li>
@@ -97,17 +100,99 @@
         </div>
         <div id="tambah-catatan" class="well" style="display:none;">
             <form id="form-data">
-                <div id="nama-group" class="form-group">
+                <!-- <div id="nama-group" class="form-group">
                     <label>Nama:</label>
                     <input type="text" class="form-control" id="nama" name="nama">
                 </div>
                 <div id="tanggal-group" class="form-group">
                     <label>Tanggal:</label>
                     <input type="date" class="form-control" id="tanggal" name="tanggal">
-                </div>
+                </div>  
                 <div id="agenda-group" class="form-group">
                     <label>Agenda:</label>
                     <textarea class="form-control" id="agenda" name="agenda"></textarea><br />
+                </div> -->
+                <div class="row">
+                    <h3>Makanan</h3>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="assets/images/nasgor.jpg" alt="...">
+                            <div class="caption">
+                                <h3>Nasi Goreng</h3>
+                                <p>...</p>
+                                <p>
+                                    <a href="#" class="btn btn-default" role="button">-</a> 
+                                    <a href="#" class="btn btn-success" role="button">+</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="assets/images/ayamgor.jpg" alt="...">
+                            <div class="caption">
+                                <h3>Ayam Goreng</h3>
+                                <p>...</p>
+                                <p>
+                                    <a href="#" class="btn btn-default" role="button">-</a> 
+                                    <a href="#" class="btn btn-success" role="button">+</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="assets/images/indomiegor.jpg" alt="...">
+                            <div class="caption">
+                                <h3>Indomie Goreng</h3>
+                                <p>...</p>
+                                <p>
+                                    <a href="#" class="btn btn-default" role="button">-</a> 
+                                    <a href="#" class="btn btn-success" role="button">+</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Minuman</h3>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="assets/images/vodka.jpg" alt="...">
+                            <div class="caption">
+                                <h3>Vodka</h3>
+                                <p>...</p>
+                                <p>
+                                    <a href="#" class="btn btn-default" role="button">-</a> 
+                                    <a href="#" class="btn btn-success" role="button">+</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="assets/images/milkshake.jpg" alt="...">
+                            <div class="caption">
+                                <h3>Milk Shake</h3>
+                                <p>...</p>
+                                <p>
+                                    <a href="#" class="btn btn-default" role="button">-</a> 
+                                    <a href="#" class="btn btn-success" role="button">+</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="assets/images/icetea.jpg" alt="...">
+                            <div class="caption">
+                                <h3>Ice Tea</h3>
+                                <p>...</p>
+                                <p>
+                                    <a href="#" class="btn btn-default" role="button">-</a> 
+                                    <a href="#" class="btn btn-success" role="button">+</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <input type="button" value="Simpan" onclick="simpanData();" class="btn btn-success btn-small" />
                 <input type="reset" value="Reset" onclick="" class="btn btn-warning btn-small" />
@@ -116,12 +201,10 @@
 
         <div id="edit-data" class="well" style="display:none;">
             <form id="eform-data">
-
                 <div id="nama-group" class="form-group" style="display:none;">
                     <label>id data:</label>
                     <input type="text" class="form-control" id="eid_data" name="nama">
                 </div>
-
                 <div id="nama-group" class="form-group">
                     <label>Nama:</label>
                     <input type="text" class="form-control" id="enama" name="nama">
@@ -244,7 +327,7 @@
         </div>
     </div>
 </body>
-<script src="catatan-config.js"></script>
+<script src="assets/script/pesanan-config.js"></script>
 <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 <script src="liff-starter.js"></script>
 

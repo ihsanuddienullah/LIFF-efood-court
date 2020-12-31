@@ -55,3 +55,23 @@ button {
 .hidden {
     display: none;
 }
+
+/* Addition */
+
+.navbar-brand img {
+    max-width: 150px;  
+    margin-top: -7px;
+}
+
+.page-header {
+    margin-top: 20px;
+}
+
+#form-data .row {
+    margin: 0 auto;
+}
+
+#form-data .row h3 {
+    margin-top: 10px;
+    font-weight: bold;
+}
