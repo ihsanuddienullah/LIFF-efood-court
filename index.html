@@ -98,7 +98,7 @@
                         <div class="thumbnail">
                             <img src="assets/images/salad.jpg" alt="...">
                             <div class="caption">
-                                <h3>Fruit Salad</h3>
+                                <h3>Salad Buah</h3>
                                 <h4>Rp 15.000</h4>
                                 <h4 id="makanan2"></h4>
                                 <button href="#" class="btn btn-default" id="min-mkn2"
@@ -112,7 +112,7 @@
                         <div class="thumbnail">
                             <img src="assets/images/pie.jpg" alt="...">
                             <div class="caption">
-                                <h3>Fruit Pie</h3>
+                                <h3>Pie Buah</h3>
                                 <h4>Rp 15.000</h4>
                                 <h4 id="makanan3"></h4>
                                 <button href="#" class="btn btn-default" id="min-mkn3"
@@ -129,7 +129,7 @@
                         <div class="thumbnail">
                             <img src="assets/images/lemonjuice.jpg" alt="...">
                             <div class="caption">
-                                <h3>Lemon Juice</h3>
+                                <h3>Jus Lemon</h3>
                                 <h4>Rp 10.000</h4>
                                 <h4 id="minuman1"></h4>
                                 <button href="#" class="btn btn-default" id="min-mnm1"
@@ -143,7 +143,7 @@
                         <div class="thumbnail">
                             <img src="assets/images/milkshake.jpg" alt="...">
                             <div class="caption">
-                                <h3>Milk Shake</h3>
+                                <h3>Susu Vanilla</h3>
                                 <h4>Rp 10.000</h4>
                                 <h4 id="minuman2"></h4>
                                 <button href="#" class="btn btn-default" id="min-mnm2"
@@ -157,7 +157,7 @@
                         <div class="thumbnail">
                             <img src="assets/images/icetea.jpg" alt="...">
                             <div class="caption">
-                                <h3>Ice Tea</h3>
+                                <h3>Es Teh</h3>
                                 <h4>Rp 10.000</h4>
                                 <h4 id="minuman3"></h4>
                                 <button href="#" class="btn btn-default" id="min-mnm3"
@@ -177,23 +177,23 @@
                         <p class="sub-makanan">IDR <span id="hargaTotalMkn1">0</span></p>
                     </div>
                     <div class="panel-body text-left" id="ringkas-mkn2" style="display: none;">
-                        <span id="makanan2-ringkas">0</span> Fruit Salad
+                        <span id="makanan2-ringkas">0</span> Salad Buah
                         <p class="sub-makanan">IDR <span id="hargaTotalMkn2">0</span></p>
                     </div>
                     <div class="panel-body text-left" id="ringkas-mkn3" style="display: none;">
-                        <span id="makanan3-ringkas">0</span> Fruit Pie
+                        <span id="makanan3-ringkas">0</span> Pie Buah
                         <p class="sub-makanan">IDR <span id="hargaTotalMkn3">0</span></p>
                     </div>
                     <div class="panel-body text-left" id="ringkas-mnm1" style="display: none;">
-                        <span id="minuman1-ringkas">0</span> Lemon Juice
+                        <span id="minuman1-ringkas">0</span> Jus Lemon
                         <p class="sub-makanan">IDR <span id="hargaTotalMnm1">0</span></p>
                     </div>
                     <div class="panel-body text-left" id="ringkas-mnm2" style="display: none;">
-                        <span id="minuman2-ringkas">0</span> Milk Shake
+                        <span id="minuman2-ringkas">0</span> Susu Vanilla
                         <p class="sub-makanan">IDR <span id="hargaTotalMnm2">0</span></p>
                     </div>
                     <div class="panel-body text-left" id="ringkas-mnm3" style="display: none;">
-                        <span id="minuman3-ringkas">0</span> Ice Tea
+                        <span id="minuman3-ringkas">0</span> Es Teh
                         <p class="sub-makanan">IDR <span id="hargaTotalMnm3">0</span></p>
                     </div>                    
                     <div class="panel-footer text-left totalharga">
@@ -262,78 +262,7 @@
         <!-- <div id="list-catatan" class="well">
             Pilih List Catatan untuk melihat catatan yang sudah dibuat.
         </div> -->
-
-        <!--Konten LIFF v2-->
-
-        <div id="liffAppContent">
-            <!-- ACTION BUTTONS -->
-            <div class="buttonGroup">
-                <div class="buttonRow">
-                    <button id="openWindowButton" class="btn btn-success btn-small">Open External Window</button>
-                    <button id="closeWindowButton" class="btn btn-danger btn-small">Close LIFF App</button>
-                    <button id="sendMessageButton" class="btn btn-warning btn-small">Send Message</button>
-                </div>
-
-            </div>
-
-            <!-- LIFF DATA -->
-            <div id="liffData">
-                <h3 id="liffDataHeader" class="textLeft">Informasi:</h3>
-                <table>
-                    <tr>
-                        <th>isInClient : </th>
-                        <td id="isInClient" class="textLeft"></td>
-                    </tr>
-                    <tr>
-                        <th>isLoggedIn : </th>
-                        <td id="isLoggedIn" class="textLeft"></td>
-                    </tr>
-                </table>
-            </div>
-            <!-- LOGIN LOGOUT BUTTONS -->
-            <div class="buttonGroup">
-                <button id="liffLoginButton" class="btn btn-success btn-small">Log in</button>
-                <button id="liffLogoutButton" class="btn btn-warning btn-small">Log out</button>
-            </div>
-            <div id="statusMessage">
-                <div id="isInClientMessage"></div>
-                <div id="apiReferenceMessage">
-                    <p>Available LIFF methods vary depending on the browser you use to open the LIFF app.</p>
-                    <p>Please refer to the <a
-                            href="https://developers.line.biz/en/reference/liff/#initialize-liff-app">API reference
-                            page</a> for more information.</p>
-                </div>
-            </div>
-        </div>
-        <!-- LIFF ID ERROR -->
-        <div id="liffIdErrorMessage" class="hidden">
-            <p>You have not assigned any value for LIFF ID.</p>
-            <p>If you are running the app using Node.js, please set the LIFF ID as an environment variable in your
-                Heroku account follwing the below steps: </p>
-            <code id="code-block">
-                <ol>
-                    <li>Go to `Dashboard` in your Heroku account.</li>
-                    <li>Click on the app you just created.</li>
-                    <li>Click on `Settings` and toggle `Reveal Config Vars`.</li>
-                    <li>Set `MY_LIFF_ID` as the key and the LIFF ID as the value.</li>
-                    <li>Your app should be up and running. Enter the URL of your app in a web browser.</li>
-                </ol>
-            </code>
-            <p>If you are using any other platform, please add your LIFF ID in the <code>index.html</code> file.</p>
-            <p>For more information about how to add your LIFF ID, see <a
-                    href="https://developers.line.biz/en/reference/liff/#initialize-liff-app">Initializing the LIFF
-                    app</a>.</p>
-        </div>
-        <!-- LIFF INIT ERROR -->
-        <div id="liffInitErrorMessage" class="hidden">
-            <p>Something went wrong with LIFF initialization.</p>
-            <p>LIFF initialization can fail if a user clicks "Cancel" on the "Grant permission" screen, or if an error
-                occurs in the process of <code>liff.init()</code>.
-        </div>
-        <!-- NODE.JS LIFF ID ERROR -->
-        <div id="nodeLiffIdErrorMessage" class="hidden">
-            <p>Unable to receive the LIFF ID as an environment variable.</p>
-        </div>
+        
     </div>
 </body>
 <script src="assets/script/pesanan-config.js"></script>
