@@ -76,7 +76,8 @@ button {
     font-weight: bold;
 }
 
-.thumbnail, .panel {
+.thumbnail,
+.panel {
     box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
 }
 
@@ -98,14 +99,25 @@ body {
     display: none;
 }
 
-.totalharga {
-    font-weight: bolder;
+.panel {
+    width: 97%;
 }
 
-.totalharga p, .panel-body p {
+.totalharga {
+    font-weight: bolder;
+    background-color: #f5f5f5;
+}
+
+.totalharga p,
+.panel-body p {
     float: right;
 }
 
 .panel-body {
     padding: 0 15px;
+}
+
+#form-data input[value="Pesan Sekarang"] {
+    width: 97%;
+    font-weight: bolder;
 }
