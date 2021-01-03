@@ -4,12 +4,6 @@ html {
     font-size: 11px;
 }
 
-table {
-    width: 100%;
-    overflow-x: auto;
-    display: block;
-}
-
 div {
     max-width: 100%;
     text-align: center;

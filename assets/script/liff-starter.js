@@ -109,7 +109,7 @@ function displayIsInClientInfo() {
 function registerButtonHandlers() {
     document.getElementById('openWindowButton').addEventListener('click', function () {
         liff.openWindow({
-            url: 'https://e-food-court.herokuapp.com', // Isi dengan Endpoint URL aplikasi web Anda
+            url: 'https://e-food-court.herokuapp.com',
             external: true
         });
     });
