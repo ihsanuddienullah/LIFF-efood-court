@@ -161,7 +161,7 @@ function registerButtonHandlers() {
             .then(profile => {
                 liff.sendMessages([{
                     'type': 'text',
-                    'text': `Halo ${profile.displayName}. selamat datang di e-Food Court, \n\nTerima Kasih telah memesan makanan, \nberikut adalah pesanan anda : \n\n* ${makanan1} Nasi Goreng\n* ${makanan2} Salad Buah\n* ${makanan3} Pie Buah\n* ${minuman1} Jus Lemon\n* ${minuman2} Susu Vanilla\n* ${minuman3} Es Teh\n\n Total Pesanan : ${totalmkn} Makanan ${totalmnm} Minuman\nTotal Pembayaran : Rp. ${totalHarga}\n\nPesanan anda akan segera diproses.\n\nMohon ditunggu ya!`
+                    'text': `Halo ${profile.displayName}. selamat datang di e-Food Court, \n\nTerima Kasih telah memesan makanan, \nberikut adalah pesanan anda : \n\n* ${makanan1} Nasi Goreng\n* ${makanan2} Salad Buah\n* ${makanan3} Pie Buah\n* ${minuman1} Jus Lemon\n* ${minuman2} Susu Vanilla\n* ${minuman3} Es Teh\n\nTotal Pesanan : ${totalmkn} Makanan ${totalmnm} Minuman\nTotal Pembayaran : Rp. ${totalHarga}\n\nPesanan anda akan segera diproses.\n\nMohon ditunggu ya!`
                 }]).then(function() {
                     window.alert("Pesanan telah terkirim!");
                 }).catch(function(error) {
