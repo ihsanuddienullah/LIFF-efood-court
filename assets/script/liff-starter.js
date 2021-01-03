@@ -146,15 +146,22 @@ function registerButtonHandlers() {
         if(!liff.isInClient()) {
             sendAlertIfNotInClient();
         } else {
-            var totalmkn, totalmnm, totalHarga;
+            var totalmkn, totalmnm, totalHarga, makanan1, makanan2, makanan3, minuman1, minuman2, minuman3;
             totalmkn = $("#jmlmkn").html();
             totalmnm = $("#jmlmnm").html();
-            totalHarga = $("#harga").html();
+            totalHarga = $("#hargaTotal").html();
+            makanan1 = $("#makanan1-ringkas").html();
+            makanan2 = $("#makanan2-ringkas").html();
+            makanan3 = $("#makanan3-ringkas").html();
+            minuman1 = $("#minuman1-ringkas").html();
+            minuman2 = $("#minuman2-ringkas").html();
+            minuman3 = $("#minuman3-ringkas").html();
+            
             liff.getProfile()
             .then(profile => {
                 liff.sendMessages([{
                     'type': 'text',
-                    'text': `Hai ${profile.displayName}, \n\nTerima Kasih telah memesan makanan, \nberikut adalah review pesanannya : \n\n* ${totalmkn} Makanan\n* ${totalmnm} Minuman\n\nTotal Pembayaran : Rp. ${totalHarga}\n\nPesanan kakak akan segera diproses dan akan diberitahu jika sudah bisa diambil.\n\nMohon ditunggu ya!`
+                    'text': `Halo ${profile.displayName}, \n\nTerima Kasih telah memesan makanan, \nberikut adalah pesanan anda : \n\n* ${makanan1} Nasi Goreng\n* ${makanan2} Salad Buah\n* ${makanan3} Pie Buah\n* ${minuman1} Jus Lemon\n* ${minuman2} Susu Vanilla\n* ${minuman3} Es Teh\n\n* Total Pesanan : ${totalmkn} Makanan\n* ${totalmnm} Minuman\n\nTotal Pembayaran : Rp. ${totalHarga}\n\nPesanan anda akan segera diproses.\n\nMohon ditunggu ya!`
                 }]).then(function() {
                     window.alert("Pesanan telah terkirim!");
                 }).catch(function(error) {
